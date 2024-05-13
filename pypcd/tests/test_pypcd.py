@@ -54,7 +54,7 @@ def bin_pcd_fname():
                         'bin.pcd')
 
 def cloud_centroid(pc):
-    xyz = np.empty((pc.points, 3), dtype=np.float)
+    xyz = np.empty((pc.points, 3), dtype=float)
     xyz[:,0] = pc.pc_data['x']
     xyz[:,1] = pc.pc_data['y']
     xyz[:,2] = pc.pc_data['z']
